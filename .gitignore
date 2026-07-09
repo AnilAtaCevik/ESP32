@@ -1,0 +1,57 @@
+# ========================
+# .NET / MAUI Temel Dosyaları
+# ========================
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+
+# ========================
+# Visual Studio / IDE
+# ========================
+.vs/
+*.suo
+*.userprefs
+*.ide
+*.dbmdl
+*.jfm
+TestResults/
+
+# ========================
+# Visual Studio Code
+# ========================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ========================
+# Mac / Apple / iOS
+# ========================
+.DS_Store
+.AppleDouble
+.LSOverride
+xcuserdata/
+*.xcworkspace/
+profile
+*.dSYM/
+
+# ========================
+# Android / Mobile Çıktıları
+# ========================
+*.apk
+*.aab
+*.ipa
+*.keystore
+*.jks
+*.xap
+
+# ========================
+# Diğer Geçici Dosyalar
+# ========================
+*.log
+*.cache
+*.tmp
+*.temp
