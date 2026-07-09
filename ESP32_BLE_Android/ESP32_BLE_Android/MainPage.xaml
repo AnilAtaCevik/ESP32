@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESP32_BLE_Android.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,20" Spacing="20">
+
+            <Label Text="ESP32 RGB LED KONTROL" 
+                   FontSize="24" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold" 
+                   TextColor="#333333"/>
+
+            <Label x:Name="DurumLabel" 
+                   Text="Durum: Bağlantı Bekleniyor..." 
+                   FontSize="16" 
+                   HorizontalOptions="Center" 
+                   TextColor="Gray" 
+                   FontAttributes="Italic"/>
+
+            <Button x:Name="TaraButonu" 
+                    Text="ESP32'ye Bağlan" 
+                    Clicked="TaraButonu_Clicked" 
+                    BackgroundColor="#0078D7" 
+                    TextColor="White" 
+                    HeightRequest="50"
+                    CornerRadius="10"/>
+
+            <Line HorizontalOptions="Fill" Stroke="LightGray" StrokeThickness="1" Margin="0,10"/>
+
+            <Label Text="Renk Komutları" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+            <Button x:Name="KirmiziBtn" Text="Kırmızı" Clicked="Kirmizi_Clicked" 
+                    BackgroundColor="Red" TextColor="White" HeightRequest="45" CornerRadius="8" IsEnabled="False"/>
+
+            <Button x:Name="YesilBtn" Text="Yeşil" Clicked="Yesil_Clicked" 
+                    BackgroundColor="Green" TextColor="White" HeightRequest="45" CornerRadius="8" IsEnabled="False"/>
+
+            <Button x:Name="MaviBtn" Text="Mavi" Clicked="Mavi_Clicked" 
+                    BackgroundColor="Blue" TextColor="White" HeightRequest="45" CornerRadius="8" IsEnabled="False"/>
+
+            <Button x:Name="BeyazBtn" Text="Beyaz" Clicked="Beyaz_Clicked" 
+                    BackgroundColor="White" TextColor="Black" BorderColor="Gray" BorderWidth="1" HeightRequest="45" CornerRadius="8" IsEnabled="False"/>
+
+            <Button x:Name="SondurBtn" Text="Söndür" Clicked="Sondur_Clicked" 
+                    BackgroundColor="Black" TextColor="White" HeightRequest="45" CornerRadius="8" IsEnabled="False"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
