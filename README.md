@@ -93,3 +93,67 @@
   * Açılan isim kısmına cihaz adını yazın.
   * İşlemi tamamlamak için **Finish setup** butonuna tıklayın.
 </details>
+
+## 7. Cihazlara Donanım Yazılımı Yükleme
+
+1. Sol menüde bulunan **ESPHome** sekmesine tıklayın.
+
+<details>
+<summary><b>ESP32-S3 Yazılımı</b></summary>
+
+* Açılan sayfada oluşturduğunuz `esp32-s3` cihazına tıklayın.
+* Sol menüde bulunan Wi-Fi ayarlarındaki **SSID** ve **Password** kısımlarını, bilgisayarınızın bağlı olduğu internet ağının adı ve şifresi ile aynı olacak şekilde değiştirip yanlarındaki **Save** butonlarına tıklayın.
+* Sağ tarafta bulunan YAML formatlı kodun en altına aşağıdaki kodu ekleyin. Bu kod, cihazın üzerinde bulunan dahili RGB LED'in rengini ve parlaklığını değiştirmemizi sağlar:
+
+<pre><code>light:
+  - platform: esp32_rmt_led_strip # LED kontrol platformunu belirler
+    pin: GPIO48                   # Veri iletişiminin yapılacağı pini ayarlar
+    num_leds: 1                   # Kontrol edilecek LED sayısını belirtir
+    rgb_order: GRB                # Renklerin işlenme sırasını tanımlar
+    chipset: WS2812               # Kullanılan LED çipi modelini belirtir
+    name: "Dahili RGB LED"        # Arayüzde görünecek isim etiketini belirler</code></pre>
+
+* Az önceki kodun hemen altına aşağıdaki kodu yapıştırın. Bu kod, cihazın içindeki sensörler aracılığıyla Wi-Fi sinyal kalitesini veri olarak göndermesini sağlar:
+
+<pre><code>sensor:
+  - platform: wifi_signal         # Wi-Fi sinyal gücünü okuyan platformu belirler
+    name: "ESP32 Wi-Fi Sinyali"   # Arayüzde görünecek sensör ismini belirler
+    update_interval: 10s          # Verinin 10 saniyede bir güncellenmesini sağlar</code></pre>
+
+* Sağ altta bulunan **Save** butonuna ve ardından **Install** butonuna basın.
+* Açılan pencereden **Plug into this computer** seçeneğine tıklayın.
+* Compile (derleme) işlemi bittiğinde sağ altta bulunan **Open USB flasher** butonuna tıklayın.
+* USB kablonuzu bilgisayarınıza ve cihazınızın **COM** yazan girişine takın.
+* Açılan sekmedeki **Connect & install** butonuna tıklayın ve listeden portunuzu seçin.
+* Konsol ekranının en altında `Leaving...` yazısını gördükten sonra, sayfa kapanana kadar butona basılı tutun/basın.
+
+</details>
+
+<details>
+<summary><b>ESP-12F Yazılımı</b></summary>
+
+* Açılan sayfada oluşturduğunuz `esp-12f` cihazına tıklayın.
+* Sol menüde bulunan Wi-Fi ayarlarındaki **SSID** ve **Password** kısımlarını, bilgisayarınızın bağlı olduğu internet ağının adı ve şifresi ile aynı olacak şekilde değiştirip yanlarındaki **Save** butonlarına tıklayın.
+* Sağ tarafta bulunan YAML formatlı kodun en altına aşağıdaki kodu ekleyin. Bu kod, cihazın üzerinde bulunan röleyi açıp kapatmamızı sağlar:
+
+<pre><code>switch:
+  - platform: gpio                # Genel amaçlı giriş/çıkış pini kontrol platformunu belirler
+    name: "Röle"                  # Arayüzde görünecek anahtar (switch) ismini belirler
+    pin:
+      number: GPIO4               # Rölenin bağlı olduğu fiziksel pini ayarlar
+    id: role_1                    # Sistemin arka planda tanıyacağı benzersiz kimliği atar</code></pre>
+
+* Sağ altta bulunan **Save** butonuna ve ardından **Install** butonuna basın.
+* Açılan pencereden **Plug into this computer** seçeneğine tıklayın.
+* Compile (derleme) işlemi bittiğinde sağ altta bulunan **Open USB flasher** butonuna tıklayın.
+* Cihazınızın üzerinde bulunan 2'li pine jumper'ınızı takın (Cihazı flash moduna almak için).
+* USB kablonuzu bilgisayarınıza ve cihazınızın 4'lü pinine kırmızı kablo dışa, siyah kablo içe gelecek şekilde takın.
+* Açılan sekmedeki **Connect & install** butonuna tıklayın ve listeden portunuzu seçin.
+* Konsol ekranının en altında `Leaving...` yazısını gördükten sonra, sayfa kapanana kadar butona basılı tutun/basın.
+* USB kablonuzu bilgisayarınızdan çıkarın.
+* Jumper'ı 2'li pinden çıkarın (Cihazı flash modundan çıkarmak için).
+* USB kablonuzu bilgisayarınıza geri takın.
+
+</details>
+
+> 💡 **Not:** Bu adımları izleyip cihazınıza ilk yazılımları attıktan sonra, sonraki güncellemelerde **Plug into this computer** yerine **On the network** seçeneği ile yazılımlarınızı kablosuz olarak yükleyebilirsiniz.
