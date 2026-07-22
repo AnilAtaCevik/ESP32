@@ -57,3 +57,13 @@
 5. Açılan eklenti detay sayfasında, üst kısımda bulunan **Yükle** (Install) butonuna tıklayın ve kurulumun tamamlanmasını bekleyin.
 6. Kurulum bittikten sonra, aynı sayfada bulunan kontroller bölümündeki **Kenar Çubuğunda Göster** (Show in sidebar) seçeneğini aktif hale getirin. Bu işlem, ESPHome eklentisine daha hızlı erişebilmeniz için sol menüye bir kısayol ekleyecektir.
 7. Sayfada bulunan **Başlat** (Start) butonuna basarak eklentiyi çalıştırın.
+
+## 6. ESPHome ESP32-S3 Cihaz Oluşturma
+
+1. Sol menüde bulunan **ESPHome** (veya ESPHome Builder) sekmesine tıklayın.
+2. Açılan sayfanın sağ alt köşesinde bulunan **Create Device** butonuna tıklayın.
+3. Karşınıza çıkan seçeneklerden **Create new project** seçeneğine tıklayın.
+4. Arama çubuğuna `esp32-s3` yazın.
+5. Çıkan sonuçlardan en üstteki **Generic ESP32-S3 Board** kartının sağ altında bulunan **Select** butonuna basın.
+6. Açılan isim kısmına cihaz adı olarak `esp32-s3` yazın.
+7. İşlemi tamamlamak için **Finish setup** butonuna tıklayın.
