@@ -47,3 +47,13 @@
 4. Adres çubuğuna, not ettiğiniz IP adresini yazın, sonuna iki nokta üst üste (`:`) koyun ve port numarasını ekleyerek giriş yapın (Örnek format: `192.168.1.125:8123`).
 5. Sayfaya giriş yaptıktan sonra, Home Assistant kurulum ve kayıt ekranı gelene kadar sistemin yüklenmesini bekleyin.
 6. Karşınıza çıkan ekrandaki kayıt formunda istenilen bilgileri eksiksiz doldurun ve giriş işlemini tamamlayın.
+
+## 5. Home Assistant'a ESPHome Eklentisi Kurulumu
+
+1. Home Assistant arayüzünde, sol menüde bulunan **Ayarlar** (Settings) sekmesine tıklayın.
+2. Açılan menüden **Eklentiler** (Add-ons) bölümüne girin.
+3. Ekranın sağ alt köşesinde bulunan **Eklenti Mağazası** (Add-on Store) / Uygulama Yükle butonuna tıklayın.
+4. Arama çubuğuna `ESPHome` yazın ve çıkan sonuçlardan **ESPHome** (veya ESPHome Device Builder) seçeneğine tıklayın.
+5. Açılan eklenti detay sayfasında, üst kısımda bulunan **Yükle** (Install) butonuna tıklayın ve kurulumun tamamlanmasını bekleyin.
+6. Kurulum bittikten sonra, aynı sayfada bulunan kontroller bölümündeki **Kenar Çubuğunda Göster** (Show in sidebar) seçeneğini aktif hale getirin. Bu işlem, ESPHome eklentisine daha hızlı erişebilmeniz için sol menüye bir kısayol ekleyecektir.
+7. Sayfada bulunan **Başlat** (Start) butonuna basarak eklentiyi çalıştırın.
