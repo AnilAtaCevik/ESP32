@@ -2,13 +2,18 @@
 
 ## Genel Bakış
 
+Bu dokümantasyon, sıfırdan bir akıllı ev otomasyon altyapısının kurulmasını ve fiziksel mikrodenetleyici cihazların sisteme entegre edilmesini adım adım açıklamaktadır. Rehber, sırasıyla aşağıdaki süreçleri kapsamaktadır:
+
+1. **Sanal Makine (VM) Üzerine HAOS Kurulumu:** Oracle VM VirtualBox kullanılarak Home Assistant işletim sisteminin (HAOS) bilgisayar üzerinde yapılandırılması ve çalıştırılması.
+2. **ESPHome Eklentisi ile Donanım Yazılımı Yüklenmesi:** Home Assistant içerisine ESPHome eklentisinin kurularak ESP (ESP32-S3 ve ESP-12F) cihazlarına gerekli donanım yazılımlarının (firmware/kod) yüklenmesi.
+3. **ESP Cihazlarının Home Assistant Üzerinden Kontrol Edilmesi:** Kodlanan ve yapılandırılan cihazların sisteme dahil edilerek Home Assistant panosu üzerinden (RGB LED renk/parlaklık ayarı, röle aç/kapa işlemleri vb.) anlık olarak yönetilmesi.
 
 ## Önkoşullar
+
 <details>
 <summary><b>Oracle VirtualBox Kurulumu</b></summary>
 </details>
  
-
 <details>
 <summary><b>Home Assistant Kurulumu (.vdi)</b></summary>
 </details>
