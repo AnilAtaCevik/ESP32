@@ -1,9 +1,23 @@
-# Home Assistant OS VirtualBox Kurulum Dokümantasyonu
+# VM ile HAOS Kurulumu ve ESPHome Eklentisi Kullanımı
 
 ## Genel Bakış
 
-## Önkoşullar
 
+## Önkoşullar
+<details>
+<summary><b>Oracle VirtualBox Kurulumu</b></summary>
+</details>
+ 
+
+<details>
+<summary><b>Home Assistant Kurulumu (.vdi)</b></summary>
+</details>
+
+ESP32-S3
+HW 622
+USB-C
+USB-TTL
+Jumper
 
 ---
 
