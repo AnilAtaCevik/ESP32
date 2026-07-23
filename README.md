@@ -11,25 +11,28 @@ Bu dokümantasyon, sıfırdan bir akıllı ev otomasyon altyapısının kurulmas
 ## Önkoşullar
 
 <details>
-<summary><b>Oracle VirtualBox Kurulumu</b></summary>
-*https://www.oracle.com/tr/virtualization/technologies/vm/downloads/virtualbox-downloads.html linkini takip ediniz
+<summary><b>1. Oracle VirtualBox Kurulumu</b></summary>
+ 
+* https://www.oracle.com/tr/virtualization/technologies/vm/downloads/virtualbox-downloads.html linkini takip ediniz
 * Açılan sayfadaki tablodan işletim sisteminizin karşısındaki indirme butonuna basınız
 * İndirdiğiniz dosyayı açarak bilgisayarınıza kurunuz
 
 </details>
  
 <details>
-<summary><b>Home Assistant Kurulumu (.vdi)</b></summary>
-*https://www.home-assistant.io/installation/windows linkini takip ediniz
+<summary><b>2. Home Assistant Kurulumu (.vdi)</b></summary>
+ 
+* https://www.home-assistant.io/installation/windows linkini takip ediniz
 * Açılan sayfada (.vdi) seçeneğini indiriniz
 * İndirdiğiniz zip dosyasının içinden .vdi dosyanızı çıkarınız
+
 </details>
 
-ESP32-S3
-HW 622
-USB-C
-USB-TTL
-Jumper
+3. ESP32-S3
+4. HW 622
+5. USB-C Kablosu
+6. USB-TTL Kablosu
+7. Jumper
 
 ---
 
@@ -183,3 +186,10 @@ Jumper
 </details>
 
 > 💡 **Not:** Bu adımları izleyip cihazınıza ilk yazılımları attıktan sonra, sonraki güncellemelerde **Plug into this computer** yerine **On the network** seçeneği ile yazılımlarınızı kablosuz olarak yükleyebilirsiniz.
+
+## 8. Cihaz Ekleme ve Yönetme
+
+1. Sol menüde bulunan **Genel Bakış** sekmesine tıklayın.
+2. Açılan sayfanın sağ tarafında bulunan cihaz ekleme seçeneğini kullanarak cihazlarınızı sisteme dahil edin.
+3. Yine **Genel Bakış** sekmesi altında bulunan cihazlar bölümüne girin.
+4. Bu bölümde eklediğiniz cihazları göreceksiniz. İstediğiniz cihaza tıklayarak yapılandırdığınız ayarları ve donanım değişikliklerini test edebilirsiniz.
