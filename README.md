@@ -12,10 +12,17 @@ Bu dokümantasyon, sıfırdan bir akıllı ev otomasyon altyapısının kurulmas
 
 <details>
 <summary><b>Oracle VirtualBox Kurulumu</b></summary>
+*https://www.oracle.com/tr/virtualization/technologies/vm/downloads/virtualbox-downloads.html linkini takip ediniz
+* Açılan sayfadaki tablodan işletim sisteminizin karşısındaki indirme butonuna basınız
+* İndirdiğiniz dosyayı açarak bilgisayarınıza kurunuz
+
 </details>
  
 <details>
 <summary><b>Home Assistant Kurulumu (.vdi)</b></summary>
+*https://www.home-assistant.io/installation/windows linkini takip ediniz
+* Açılan sayfada (.vdi) seçeneğini indiriniz
+* İndirdiğiniz zip dosyasının içinden .vdi dosyanızı çıkarınız
 </details>
 
 ESP32-S3
